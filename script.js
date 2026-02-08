@@ -1,6 +1,6 @@
 w
 function openWhatsApp() {
-  const phone = "917354646045"; // change if needed
+  const phone = "919630809428"; // change if needed
   const message = "Hello Doctor, I want to consult regarding my health.";
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
 }
@@ -13,7 +13,7 @@ function sendEnquiry(e) {
   const msg = document.getElementById("message").value;
 
   const text = `Name: ${name}%0APhone: ${phone}%0AIssue: ${msg}`;
-  window.open(`https://wa.me/917354646045?text=${text}`, "_blank");
+  window.open(`https://wa.me/919630809428?text=${text}`, "_blank");
 }
 
 function toggleMenu() {
@@ -104,3 +104,4 @@ document.addEventListener('click', function(e) {
     }
   }
 });
+
