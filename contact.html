@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Lahariya Health Clinic – Gwalior</title>
+  <meta name="description" content="Contact Lahariya Health Clinic for consultations. Call, WhatsApp, or use the enquiry form." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <h1>Lahariya Health Clinic</h1>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Doctor</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="clinic.html">Clinic Info</a></li>
+      <li><a href="patient-info.html">Patient Info</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Get in touch for your health concerns</p>
+  </div>
+</header>
+
+<!-- CONTACT DETAILS -->
+<section class="section">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="grid">
+      <div>
+        <h3>Phone</h3>
+        <p><a href="tel:+917354646045">+91 7354646045</a></p>
+        <h3>WhatsApp</h3>
+        <p><a href="#" onclick="openWhatsApp()">Click to message</a></p>
+        <h3>Address</h3>
+        <p>A-21, Basant Vihar Colony, Gwalior – 474002, Madhya Pradesh, India</p>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps?q=Lahariya%20Health%20Clinic%20Gwalior&output=embed"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRY FORM -->
+<section class="section light">
+  <div class="container">
+    <h2>Send an Enquiry</h2>
+    <form onsubmit="sendEnquiry(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <textarea id="message" placeholder="Health Concern or Message"></textarea>
+      <button type="submit" class="btn whatsapp">Send via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<a href="#" class="floating-whatsapp" onclick="openWhatsApp()">💬</a>
+
+<footer>
+  <p>© 2025 Lahariya Health Clinic | Gwalior</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
